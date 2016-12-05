@@ -70,6 +70,15 @@
     <Compile Include="03_OpenClosedPrinciple\VirtualMethods\TradeProcessorVersion2.cs" />
     <Compile Include="05_InterfaceSegregationPriniciple\03\DeleteConfirmation.cs" />
     <Compile Include="05_InterfaceSegregationPriniciple\03\IUserInteraction.cs" />
+    <Compile Include="05_InterfaceSegregationPriniciple\04\CrudCaching.cs" />
+    <Compile Include="05_InterfaceSegregationPriniciple\04\ICreateReadUpdate.cs" />
+    <Compile Include="05_InterfaceSegregationPriniciple\05\ICreateUpdate.cs" />
+    <Compile Include="05_InterfaceSegregationPriniciple\05\IRead.cs" />
+    <Compile Include="05_InterfaceSegregationPriniciple\05\ReadCaching.cs" />
+    <Compile Include="05_InterfaceSegregationPriniciple\06\AuditInfo.cs" />
+    <Compile Include="05_InterfaceSegregationPriniciple\06\ISave.cs" />
+    <Compile Include="05_InterfaceSegregationPriniciple\06\SaveAuditing.cs" />
+    <Compile Include="05_InterfaceSegregationPriniciple\07\CreateReadUpdateDelete.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="02_SingleResponsibilityPrinciple\01\TradeProcessor.cs" />
