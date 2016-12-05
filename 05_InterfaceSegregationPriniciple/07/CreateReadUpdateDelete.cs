@@ -43,3 +43,4 @@ namespace Solid._05_InterfaceSegregationPriniciple._07
         }
     }
 }
+

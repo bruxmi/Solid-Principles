@@ -6,19 +6,19 @@ using Solid._06_DependencyInjection.Interafaces;
 namespace Solid._06_DependencyInjection
 {
     [TestClass]
-    public class CalculationServiceUnitTest: BaseForUnitTest
+    public class SubstractionServiceUnitTest: BaseForUnitTest
     {
         [TestMethod]
-        public void AddTenAndSubstractTwenty_InputNumberIsFifteen_Expect_Forty()
+        public void Substract_TenFromTwenty_Expect_Ten()
         {
             //Arrange
-            var calculationService = Container.Resolve<ICalculate>();
+            var substractionService = Container.Resolve<ISubstract>();
 
             //Act
-            var actual = calculationService.AddTenAndSubstractTwenty(50);
+            var actual = substractionService.Substract(20, 10);
 
             //Assert
-            Assert.AreEqual(40, actual);
+            Assert.AreEqual(10, actual);
         }
     }
 }

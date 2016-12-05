@@ -96,8 +96,11 @@
     <Compile Include="05_InterfaceSegregationPriniciple\06\ISave.cs" />
     <Compile Include="05_InterfaceSegregationPriniciple\06\SaveAuditing.cs" />
     <Compile Include="05_InterfaceSegregationPriniciple\07\CreateReadUpdateDelete.cs" />
+    <Compile Include="06_DependencyInjection\BaseForUnitTest.cs" />
+    <Compile Include="06_DependencyInjection\SubstractionServiceUnitTest.cs" />
     <Compile Include="06_DependencyInjection\Bootstrap\Bootstrapper.cs" />
     <Compile Include="06_DependencyInjection\CalculationServiceUnitTest.cs" />
+    <Compile Include="06_DependencyInjection\AdditionServiceUnitTest.cs" />
     <Compile Include="06_DependencyInjection\Implementations\AdditionServiceBroken.cs" />
     <Compile Include="06_DependencyInjection\Implementations\AdditionServiceBrokenCorrect.cs" />
     <Compile Include="06_DependencyInjection\Implementations\CalculationService.cs" />
@@ -128,7 +131,9 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
