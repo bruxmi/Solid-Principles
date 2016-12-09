@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using Solid._02_SingleResponsibilityPrinciple._02.Interafaces;
+using Solid._02_SingleResponsibilityPrinciple._03.Interafaces;
 
-namespace Solid._02_SingleResponsibilityPrinciple._02.Services
+namespace Solid._02_SingleResponsibilityPrinciple._03.Services
 {
     public class StreamTradeDataProvider : ITradeDataProvider
     {
+        //Only the constructor 
         public StreamTradeDataProvider(Stream stream)
         {
             this.stream = stream;

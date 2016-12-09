@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Solid._02_SingleResponsibilityPrinciple._02.Interafaces;
+using Solid._02_SingleResponsibilityPrinciple._03.Interafaces;
 
 namespace Solid._05_InterfaceSegregationPriniciple._01
 {

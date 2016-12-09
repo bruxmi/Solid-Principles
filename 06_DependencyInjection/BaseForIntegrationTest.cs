@@ -8,14 +8,14 @@ using Solid._06_DependencyInjection.Bootstrap;
 
 namespace Solid._06_DependencyInjection
 {
-    public class BaseForUnitTest
+    public class BaseForIntegrationTest
     {
         public IUnityContainer Container { get; }
 
-        public BaseForUnitTest()
+        public BaseForIntegrationTest()
         {
             this.Container = new UnityContainer();
-            this.Container.InitializeProd();
+            this.Container.InitializeStub();
         }
     }
 }

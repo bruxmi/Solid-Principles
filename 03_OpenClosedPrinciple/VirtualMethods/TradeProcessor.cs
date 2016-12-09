@@ -4,6 +4,7 @@
     {
         public virtual void ProcessTrades()
         {
+            //do something base here
         }
     }
 }

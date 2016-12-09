@@ -4,8 +4,8 @@
     {
         public override void ProcessTrades()
         {
-            base.ProcessTrades();
             this.DoSomeMoreStuff();
+            base.ProcessTrades();
         }
 
         public void DoSomeMoreStuff()

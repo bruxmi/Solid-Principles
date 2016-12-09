@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Solid._01_Start;
-using Solid._02_SingleResponsibilityPrinciple._02.Interafaces;
+using Solid._02_SingleResponsibilityPrinciple._03.Interafaces;
 
-namespace Solid._02_SingleResponsibilityPrinciple._02.Services
+namespace Solid._02_SingleResponsibilityPrinciple._03.Services
 {
     public class SimpleTradeParser : ITradeParser
     {
@@ -22,12 +22,12 @@ namespace Solid._02_SingleResponsibilityPrinciple._02.Services
             var lineCount = 1;
             foreach (var line in tradeData)
             {
-                var fields = line.Split(new char[] { ',' });
-                if (!tradeValidator.Validate(fields))
+                var fields = line.Split(',');
+                if (!this.tradeValidator.Validate(fields))
                 {
                     continue;
                 }
-                var trade = tradeMapper.Map(fields);
+                var trade = this.tradeMapper.Map(fields);
                 trades.Add(trade);
                 lineCount++;
             }

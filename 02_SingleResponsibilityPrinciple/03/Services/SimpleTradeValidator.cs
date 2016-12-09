@@ -1,6 +1,6 @@
-﻿using Solid._02_SingleResponsibilityPrinciple._02.Interafaces;
+﻿using Solid._02_SingleResponsibilityPrinciple._03.Interafaces;
 
-namespace Solid._02_SingleResponsibilityPrinciple._02.Services
+namespace Solid._02_SingleResponsibilityPrinciple._03.Services
 {
     public class SimpleTradeValidator : ITradeValidator
     {

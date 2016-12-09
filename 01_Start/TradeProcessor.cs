@@ -20,7 +20,7 @@ namespace Solid._01_Start
 
             var trades = new List<TradeRecord>();
             var lineCount = 1;
-
+            //validate loaded data
             foreach (var line in lines)
             {
                 var fields = line.Split(new char[] { ',' });

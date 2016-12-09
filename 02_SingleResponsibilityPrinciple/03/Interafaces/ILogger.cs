@@ -1,4 +1,4 @@
-﻿namespace Solid._02_SingleResponsibilityPrinciple._02.Interafaces
+﻿namespace Solid._02_SingleResponsibilityPrinciple._03.Interafaces
 {
     public interface ILogger
     {

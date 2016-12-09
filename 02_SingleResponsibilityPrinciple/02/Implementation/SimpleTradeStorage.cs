@@ -1,19 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Solid._01_Start;
-using Solid._02_SingleResponsibilityPrinciple._02.Interafaces;
+using Solid._02_SingleResponsibilityPrinciple._03.Interafaces;
 
-namespace Solid._02_SingleResponsibilityPrinciple._02.Services
+namespace Solid._02_SingleResponsibilityPrinciple._02.Implementation
 {
     public class SimpleTradeStorage : ITradeStorage
     {
-        private readonly ILogger logger;
-
-        public SimpleTradeStorage(ILogger logger)
-        {
-            this.logger = logger;
-        }
-
         public void Persist(IEnumerable<TradeRecord> trades)
         {
             using (var connection = new System.Data.SqlClient.SqlConnection("Data Source = (local); Initial Catalog = TradeDatabase; Integrated Security = True"))
@@ -38,7 +32,13 @@ namespace Solid._02_SingleResponsibilityPrinciple._02.Services
                 }
                 connection.Close();
             }
-            this.logger.LogWarning("INFO: {0} trades processed", trades.Count());
+            this.LogWarning("INFO: {0} trades processed", trades.Count());
+        }
+
+        //violates single responsibility
+        private void LogWarning(string message, params object[] args)
+        {
+            Console.WriteLine(message, args);
         }
     }
 }

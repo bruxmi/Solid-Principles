@@ -1,7 +1,11 @@
-﻿using Solid._02_SingleResponsibilityPrinciple._02.Interafaces;
+﻿using Solid._02_SingleResponsibilityPrinciple._03.Interafaces;
 
-namespace Solid._02_SingleResponsibilityPrinciple._02
+namespace Solid._02_SingleResponsibilityPrinciple
 {
+    /// <summary>
+    /// The class models the process of transferring trade data from one format to another. This is its only
+    /// responsibility, its only concern, and the only reason that this class should change.
+    /// </summary>
     public class TradeProcessor
     {
         private readonly ITradeDataProvider _tradeDataProvider;
