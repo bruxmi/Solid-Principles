@@ -1,12 +1,13 @@
-﻿using Solid._02_SingleResponsibilityPrinciple._03.Interafaces;
+﻿
+using Solid._03_OpenClosedPrinciple._01.Interfaces;
 
-namespace Solid._02_SingleResponsibilityPrinciple._03.Services
+namespace Solid._03_OpenClosedPrinciple._01.Implementation
 {
-    public class SimpleTradeValidator : ITradeValidator
+    public class SimpleTradeValidator: ITradeValidator
     {
-        private readonly ILogger logger;
+        private readonly SimpleLogger logger;
 
-        public SimpleTradeValidator(ILogger logger)
+        public SimpleTradeValidator(SimpleLogger logger)
         {
             this.logger = logger;
         }

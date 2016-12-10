@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using Solid._03_OpenClosedPrinciple._01.Interfaces;
+using System.Collections.Generic;
 using System.IO;
-using Solid._02_SingleResponsibilityPrinciple._03.Interafaces;
 
-namespace Solid._02_SingleResponsibilityPrinciple._03.Services
+namespace Solid._03_OpenClosedPrinciple._01.Implementation
 {
-    public class StreamTradeDataProvider : ITradeDataProvider
+    public class StreamTradeDataProvider: ITradeDataProvider
     {
         //Only the constructor 
         public StreamTradeDataProvider(Stream stream)

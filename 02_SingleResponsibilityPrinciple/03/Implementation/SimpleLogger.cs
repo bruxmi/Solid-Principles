@@ -1,9 +1,8 @@
 ﻿using System;
-using Solid._02_SingleResponsibilityPrinciple._03.Interafaces;
 
-namespace Solid._02_SingleResponsibilityPrinciple._03.Services
+namespace Solid._02_SingleResponsibilityPrinciple._03.Implementation
 {
-    public class SimpleLogger : ILogger
+    public class SimpleLogger
     {
         public void LogWarning(string message, params object[] args)
         {

@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using Solid._01_Start;
-using Solid._02_SingleResponsibilityPrinciple._02.Interfaces;
 
 namespace Solid._02_SingleResponsibilityPrinciple._02.Implementation
 {
-    public class SimpleTradeParser : ITradeParser
+    public class SimpleTradeParser
     {
         public IEnumerable<TradeRecord> Parse(IEnumerable<string> tradeData)
         {

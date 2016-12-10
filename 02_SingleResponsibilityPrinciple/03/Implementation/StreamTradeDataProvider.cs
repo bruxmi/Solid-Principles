@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 
-namespace Solid._02_SingleResponsibilityPrinciple._02.Implementation
+namespace Solid._02_SingleResponsibilityPrinciple._03.Implementation
 {
     public class StreamTradeDataProvider
     {
+        //Only the constructor 
         public StreamTradeDataProvider(Stream stream)
         {
             this.stream = stream;
         }
 
-        //Moving the input parameter to the constructor removes the dependency from the interface
         public IEnumerable<string> GetTradeData()
         {
             var tradeData = new List<string>();

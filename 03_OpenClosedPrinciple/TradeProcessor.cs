@@ -1,6 +1,6 @@
-﻿using Solid._02_SingleResponsibilityPrinciple._03.Implementation;
+﻿using Solid._03_OpenClosedPrinciple._01.Interfaces;
 
-namespace Solid._02_SingleResponsibilityPrinciple
+namespace Solid._03_OpenClosedPrinciple
 {
     /// <summary>
     /// The class models the process of transferring trade data from one format to another. This is its only
@@ -8,11 +8,11 @@ namespace Solid._02_SingleResponsibilityPrinciple
     /// </summary>
     public class TradeProcessor
     {
-        private readonly StreamTradeDataProvider _tradeDataProvider;
-        private readonly SimpleTradeParser _tradeParser;
-        private readonly SimpleTradeStorage _tradeStorage;
+        private readonly ITradeDataProvider _tradeDataProvider;
+        private readonly ITradeParser _tradeParser;
+        private readonly ITradeStorage _tradeStorage;
 
-        public TradeProcessor(StreamTradeDataProvider tradeDataProvider, SimpleTradeParser tradeParser, SimpleTradeStorage tradeStorage)
+        public TradeProcessor(ITradeDataProvider tradeDataProvider, ITradeParser tradeParser, ITradeStorage tradeStorage)
         {
             this._tradeDataProvider = tradeDataProvider;
             this._tradeParser = tradeParser;

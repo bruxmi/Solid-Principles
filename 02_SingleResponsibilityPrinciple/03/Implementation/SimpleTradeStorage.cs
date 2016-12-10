@@ -1,15 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Solid._01_Start;
-using Solid._02_SingleResponsibilityPrinciple._03.Interafaces;
 
-namespace Solid._02_SingleResponsibilityPrinciple._03.Services
+namespace Solid._02_SingleResponsibilityPrinciple._03.Implementation
 {
-    public class SimpleTradeStorage : ITradeStorage
+    public class SimpleTradeStorage 
     {
-        private readonly ILogger logger;
+        private readonly SimpleLogger logger;
 
-        public SimpleTradeStorage(ILogger logger)
+        public SimpleTradeStorage(SimpleLogger logger)
         {
             this.logger = logger;
         }
