@@ -5,9 +5,9 @@ namespace Solid._03_OpenClosedPrinciple._01.Implementation
 {
     public class SimpleTradeValidator: ITradeValidator
     {
-        private readonly SimpleLogger logger;
+        private readonly ILogger logger;
 
-        public SimpleTradeValidator(SimpleLogger logger)
+        public SimpleTradeValidator(ILogger logger)
         {
             this.logger = logger;
         }

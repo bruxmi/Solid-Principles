@@ -1,6 +1,6 @@
-﻿using Solid._06_DependencyInjection.Interafaces;
+﻿using Solid._06_DependencyInversion.Interfaces;
 
-namespace Solid._06_DependencyInjection.Implementations
+namespace Solid._06_DependencyInversion.Implementations
 {
     public class CalculationService: ICalculate
     {

@@ -10,7 +10,6 @@ namespace Solid._02_SingleResponsibilityPrinciple._02.Implementation
             this.stream = stream;
         }
 
-        //Moving the input parameter to the constructor removes the dependency from the interface
         public IEnumerable<string> GetTradeData()
         {
             var tradeData = new List<string>();

@@ -7,9 +7,9 @@ namespace Solid._03_OpenClosedPrinciple._01.Implementation
 {
     public class SimpleTradeStorage: ITradeStorage
     {
-        private readonly SimpleLogger logger;
+        private readonly ILogger logger;
 
-        public SimpleTradeStorage(SimpleLogger logger)
+        public SimpleTradeStorage(ILogger logger)
         {
             this.logger = logger;
         }

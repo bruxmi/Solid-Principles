@@ -1,4 +1,4 @@
-﻿namespace Solid._06_DependencyInjection.Interafaces
+﻿namespace Solid._06_DependencyInversion.Interfaces
 {
     public interface IAdd
     {

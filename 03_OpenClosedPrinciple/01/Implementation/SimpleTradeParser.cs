@@ -7,10 +7,10 @@ namespace Solid._03_OpenClosedPrinciple._01.Implementation
     public class SimpleTradeParser: ITradeParser
     {
 
-        private readonly SimpleTradeValidator tradeValidator;
-        private readonly SimpleTradeMapper tradeMapper;
+        private readonly ITradeValidator tradeValidator;
+        private readonly ITradeMapper tradeMapper;
 
-        public SimpleTradeParser(SimpleTradeValidator tradeValidator, SimpleTradeMapper tradeMapper)
+        public SimpleTradeParser(ITradeValidator tradeValidator, ITradeMapper tradeMapper)
         {
             this.tradeValidator = tradeValidator;
             this.tradeMapper = tradeMapper;

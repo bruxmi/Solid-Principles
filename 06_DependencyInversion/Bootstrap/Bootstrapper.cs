@@ -1,8 +1,8 @@
 ﻿using Microsoft.Practices.Unity;
-using Solid._06_DependencyInjection.Implementations;
-using Solid._06_DependencyInjection.Interafaces;
+using Solid._06_DependencyInversion.Interfaces;
+using Solid._06_DependencyInversion.Implementations;
 
-namespace Solid._06_DependencyInjection.Bootstrap
+namespace Solid._06_DependencyInversion.Bootstrap
 {
     public static class Bootstrapper
     {

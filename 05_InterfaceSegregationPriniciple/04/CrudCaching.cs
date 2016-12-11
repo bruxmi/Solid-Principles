@@ -13,10 +13,12 @@ namespace Solid._05_InterfaceSegregationPriniciple._04
         {
             _decorated = decorated;
         }
+
         public void Create(TEntity entity)
         {
             this._decorated.Create(entity);
         }
+
         public TEntity ReadOne(Guid identity)
         {
             if (this._cachedEntity == null)
@@ -34,7 +36,6 @@ namespace Solid._05_InterfaceSegregationPriniciple._04
             }
             return this._allCachedEntities;
         }
-
 
         public void Update(TEntity entity)
         {

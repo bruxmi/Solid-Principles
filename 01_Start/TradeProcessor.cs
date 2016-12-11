@@ -26,6 +26,7 @@ namespace Solid._01_Start
                 var fields = line.Split(new char[] { ',' });
                 if (fields.Length != 3)
                 {
+                    //log messages
                     Console.WriteLine("WARN: Line {0} malformed. Only {1} field(s) found.",
                     lineCount, fields.Length);
                     continue;
@@ -50,7 +51,7 @@ namespace Solid._01_Start
 
                 var sourceCurrencyCode = fields[0].Substring(0, 3);
                 var destinationCurrencyCode = fields[0].Substring(3, 3);
-                // calculate values
+                // mapping to traderecords
                 var trade = new TradeRecord
                 {
                     SourceCurrency = sourceCurrencyCode,

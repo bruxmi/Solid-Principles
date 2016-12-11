@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Practices.Unity;
-using Solid._06_DependencyInjection.Bootstrap;
+using Solid._06_DependencyInversion.Bootstrap;
 
-namespace Solid._06_DependencyInjection
+namespace Solid._06_DependencyInversion
 {
     public class BaseForIntegrationTest
     {
